@@ -1,0 +1,181 @@
+*{
+padding: 0;
+margin: 0;
+font-family: 'Josefin Sans',sans-serif;
+box-sizing: border-box;
+}
+body{
+    background-color: rgb(54, 45, 45);
+}
+.head{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.image{
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    position: relative;
+    right: 6%;
+    border-radius: 150px;
+}
+.logo{
+    color:white;
+    font-size: 25px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+span{
+    color: crimson;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 25px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+
+}
+nav ul li a:hover{
+    color: crimson;
+    transition: .4s;
+
+}
+.btn{
+    background-color: crimson;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform :scale(1.2);
+
+}
+.content{
+    position:absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.content h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 55px;
+}
+.content h3{
+    color: white;
+    margin-bottom:50px;
+    font-size: 20px;
+}
+.content h4{
+    color:chocolate;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.content .name:hover{
+    transition-duration: 0.4s;
+    color: brown;
+    transform: scale(1.2);
+}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    padding: 2%;
+    justify-content: space-between;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px ;
+    border: 2px solid;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    left: 120%;
+    
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: white;
+    border: 3px;
+    font-size: 20px;
+    color: rgb(68, 76, 76);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.about, .services{
+    background-color:springgreen;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.about{
+    background-color: rgb(127, 243, 187);
+    width: 40%;
+}
+
+.services{
+    position: relative;
+    background-color: rgb(127, 243, 187);
+    width: 40%;
+    left: 10%;
+}
+.about:hover {
+    transition: transform 0.4s;
+    transform: scale(1.2);
+  }
+.services:hover{
+    transition: transform .4s;
+    transform :scale(1.2);
+    border-color: blue;
+    border-width: 10px;
+}
+.box h{
+    color: black;
+    border : none;
+}
+
