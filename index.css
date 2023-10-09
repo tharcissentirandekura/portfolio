@@ -54,11 +54,7 @@ nav ul li a{
     font-size: 18px;
 
 }
-nav ul li a:hover{
-    color: crimson;
-    transition: .4s;
 
-}
 .btn{
     background-color: crimson;
     text-decoration: none;
@@ -69,7 +65,7 @@ nav ul li a:hover{
     border-radius: 30px;
     transition: transform .4s;
 }
-.btn:hover{
+#link:hover,.btn:hover{
     transform :scale(1.2);
 
 }
