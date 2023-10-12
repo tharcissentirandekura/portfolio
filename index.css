@@ -5,7 +5,10 @@ font-family: Tahoma, sans-serif;
 box-sizing: border-box;
 }
 body{
-    background-color: rgb(186, 194, 203);
+    background-color: rgb(3, 11, 22);
+    margin: 20px;
+    padding: 20px;
+
 }
 .head{
     height: 100vh;
@@ -18,6 +21,7 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    font-size: 20px;
 }
 .image{
     display: flex;
@@ -25,6 +29,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 img{
     position: relative;
@@ -38,7 +43,7 @@ img{
     cursor: pointer;
 }
 span{
-    color: crimson;
+    color: rgb(42, 169, 174);
 }
 nav ul li{
     list-style: none;
@@ -53,6 +58,17 @@ nav ul li a{
     text-transform: capitalize;
     font-size: 18px;
 
+}
+
+li :hover{
+    text-decoration: underline;
+    color: aqua;
+    font-size: 20px;
+}
+
+#link :hover{
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .btn{
@@ -76,73 +92,49 @@ nav ul li a{
     transform: translateY(-50%);
 }
 .content h1{
+    position: relative;
     color: white;
     margin: 20px 0px 20px;
     font-size: 55px;
-}
-.content h3{
-    color: white;
-    margin-bottom:50px;
-    font-size: 20px;
-}
-.content h4{
-    color:chocolate;
-    font-size: 18px;
-    letter-spacing: 2px;
+    bottom: 10%;
+
 }
 .content .name:hover{
     transition-duration: 0.4s;
-    color: brown;
+    color: #336bda;
     transform: scale(1.2);
-
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-}
-.box{
-    display: flex;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-    background-color: white;
-    border: 3px;
-    font-size: 20px;
-    color: rgb(68, 76, 76);
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-.about, .services{
-    background-color:springgreen;
-    padding: 10px 30px;
-    border-radius: 20px;
 }
 .about{
-    background-color: rgb(127, 243, 187);
-    width: 40%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    color: lightgrey;
+    font-size: 20px;
+    width: 70%;
+    padding: 30px;
+    margin: 30px;
+    align-items: normal;
+    bottom : 400px;
+    left: 60px;
+
 }
 
-.services{
+.about :hover{
+    transition: transform .2s;
+    transition-duration: 2.10s;
+    width: 70%;  
+}
+
+#resume,h4{
     position: relative;
-    background-color: rgb(127, 243, 187);
-    width: 40%;
-    left: 10%;
+    align-items: center;
+    bottom: 400px;
+    padding: 10 20px;
+    margin: 60px;
 }
-.about:hover {
-    transition: transform 0.4s;
-    transform: scale(1.2);
-  }
-.services:hover{
-    transition: transform .4s;
-    transform :scale(1.2);
-    border-color: blue;
-    border-width: 10px;
-}
-.box h{
-    color: black;
-    border : none;
+
+#resume h3,h2,h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
 }
