@@ -5,7 +5,7 @@ font-family: 'Josefin Sans',sans-serif;
 box-sizing: border-box;
 }
 body{
-    background-color: rgb(54, 45, 45);
+    background-color: rgb(26, 10, 29);
 }
 .head{
     height: 100vh;
@@ -21,7 +21,7 @@ nav{
 }
 .image{
     display: flex;
-
+    font-family: Bungee, cursive;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
