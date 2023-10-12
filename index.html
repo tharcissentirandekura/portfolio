@@ -7,6 +7,7 @@
     <title>My personal portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="Javascript" href="animate.js">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -18,15 +19,16 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a id="link" https://github.com/tharcissentirandekura"><i class="fa fa-github"></i></a></li>
-                <li><a id ="link" href="tntirand@oberlin.edu"><i class="fa fa-envelope-o"></i></a></li>
+                <li><a id="link" href="https://github.com/tharcissentirandekura" target="_black"><i class="fa fa-github"></i></a></li>
+                <li><a id ="link" href="mailto:tntirand@oberlin.edu" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                
 
             </ul>
         </nav>
         <div class="content">
             <div class = "image">
-                <h1 id="auto-typing" class="name">Tharcisse Ntirandekura</h1>
-                <img src="myimage.jpeg" alt="Tharcisse is a student at oberlin college" height="10%" width="20%">
+                <h1 id="auto-typing" class="name"></h1>
+                <img src="myimage.jpeg" alt="Tharcisse is a student at oberlin college" height="20%" width="30%">
             </div>
         </div>
     </div>
@@ -50,24 +52,31 @@
             <h4>Portfolio</h4>
             
             <div class="collatz">
-                <img src=""
-                <a href="">Visit here for more</a>
+                <img src="">
+                <p>
+                    This project focuses on visualizing the behavior of the Collatz conjecture sequence within a specific range. 
+                    Leveraging Python's capabilities, I utilized the matplotlib library to create compelling visual representations.
+                    The project aimed to provide deeper insights into the patterns and characteristics of the sequence. 
+                    By employing matplotlib's powerful plotting functionalities, I generated visually appealing line 2D
+                    plots and scatter plots to showcase the sequence's progression. Customization options were expertly 
+                    utilized to refine the visuals, including color schemes, line styles, labels, titles, and annotations
+                    and checking if the sequence meets the benford's law( the distribution of leading digits). The project 
+                    helped me enhance my knowldge in Python programming, data visualization, and mathematical exploration.
+                    It underscored the significance of visual communication in comprehending complex mathematical concepts.
+                     I am passionate about further exploring data visualization and its applications in mathematics. 
             </div>
-            <div class="collatz">
-                <img src=""
-                <a href="">Visit here for more</a>
-            </div>
-            <div class="collatz">
-                <img src=""
-                <a href="">Visit here for more</a>
-            </div>
-            <div class="collatz">
-                <img src=""
-                <a href="">Visit here for more</a>
-            </div>
-            
-            
         </div>
+    
+        </div>
+        <script>
+
+            var typed = new Typed('.name', {
+        strings: ["Tharcisse Ntirandekura", "Oberlin College","Computer Science","Data Science Concentration","Software Development","I enjoy problem solving","I am eager to learn"," and develop new things!!"],
+        typeSpeed: 60,
+        backSpeed : 60,
+        loop:true
+        });
+        </script>
     </div>
 </body>
 </html>

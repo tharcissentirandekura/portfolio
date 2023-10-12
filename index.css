@@ -24,16 +24,17 @@ nav{
     font-size: 20px;
 }
 .image{
-    display: flex;
+    /* display: flex; */
     font-family: Bungee, cursive;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     
 }
 img{
     position: relative;
-    right: 6%;
+    left: 100%;
+    bottom: 25%;
     border-radius: 150px;
 }
 .logo{
@@ -55,7 +56,6 @@ nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: capitalize;
     font-size: 18px;
 
 }
@@ -104,7 +104,7 @@ li :hover{
     color: #336bda;
     transform: scale(1.2);
 }
-.about{
+.about,.collatz,.neurons{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +125,7 @@ li :hover{
     width: 70%;  
 }
 
-#resume,h4{
+#resume,h4,.collatz,.neurons{
     position: relative;
     align-items: center;
     bottom: 400px;
@@ -133,7 +133,7 @@ li :hover{
     margin: 60px;
 }
 
-#resume h3,h2,h4{
+#resume,h2,h4{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: white;
