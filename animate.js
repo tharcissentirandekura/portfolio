@@ -1,13 +1,16 @@
-let count = 0;
+const headingElement = document.getElementById('auto-typing');
+const text = "Tharcisse Ntirandekura";
+let index = 0;
 
-var text = " Tharcisse Ntirandekura";
+function type() {
+  headingElement.textContent = text.slice(0, index);
+  index++;
 
-var speed = 50;
+  if (index > text.length) {
+    index = 0;
+  }
 
-function autotype(){
-    if (count < text.length){
-        document.getElementsByClassName("name").innerHtml += text.charAt(count);
-        count ++ ;
-        setTimeout(autotype,speed);
-    }
+  setTimeout(type, 200); // Adjust the typing speed (in milliseconds) as needed
 }
+
+type();
